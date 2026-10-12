@@ -1,0 +1,153 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+  opacity: 1;
+  height: 144px;
+  padding: 0 40px;
+}
+
+.header-info {
+  width: 764px;
+  height: 32px;
+  opacity: 1;
+  margin: 0 auto;
+  border-bottom: 1px solid #9F9F9F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9F9F9F;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    em {
+      font-style: normal;
+      font-weight: 600;
+      color: #3019B2
+    }
+  }
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  margin-top: 24px;
+  opacity: 1;
+  border-top: 1px solid #F0F0F0;
+
+  .header-search {
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+
+    .img {
+      width: 139px;
+      height: 41.3px;
+      opacity: 1;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+  }
+
+  .header-search-input {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    width: 630px; 
+    height: 48px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    background: #F6F5F2;
+    padding: 0 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #9F9F9F;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background: #F6F5F2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+
+    button {
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: transparent;
+      color: #9F9F9F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      cursor: pointer;
+
+      img, svg {
+        color: #9F9F9F;
+        fill: #9F9F9F;
+      }
+    }
+  }
+}
+
+.header-MoreOptions {
+  width: 100%;
+  height: 29px;
+  margin: 0 auto;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #F0F0F0;
+
+  button {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #9F9F9F;
+
+    &.highlight {
+      color: #3019B2;
+    }
+  }
+}
